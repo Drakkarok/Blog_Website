@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{blog_post.title}}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="top">
+        <div class="title"><h1>My Blog</h1></div>
+           </div>
+        <div class="content">
+            <div class="card">
+                <h2>{{blog_post.title}}</h2>
+                <p>{{blog_post.body}}</p>
+                <a href="{{ url_for('home') }}">Back to the main page</a>
+            </div>
+
+    </div>
+</div>
+</body>
+<footer>
+    <p>Made with ♥️ in Bucharest.</p>
+</footer>
+</html>
